@@ -1,0 +1,7 @@
+D:\Documents\DngChat\DngChat.API\obj\Debug\net5.0\DngChat.API.csproj.AssemblyReference.cache
+D:\Documents\DngChat\DngChat.API\obj\Debug\net5.0\DngChat.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\DngChat\DngChat.API\obj\Debug\net5.0\DngChat.API.AssemblyInfoInputs.cache
+D:\Documents\DngChat\DngChat.API\obj\Debug\net5.0\DngChat.API.AssemblyInfo.cs
+D:\Documents\DngChat\DngChat.API\obj\Debug\net5.0\DngChat.API.csproj.CoreCompileInputs.cache
+D:\Documents\DngChat\DngChat.API\obj\Debug\net5.0\DngChat.API.MvcApplicationPartsAssemblyInfo.cs
+D:\Documents\DngChat\DngChat.API\obj\Debug\net5.0\DngChat.API.MvcApplicationPartsAssemblyInfo.cache
