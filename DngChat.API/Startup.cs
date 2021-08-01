@@ -33,6 +33,16 @@ namespace DngChat.API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DngChat.API", Version = "v1" });
             });
             services.AddSignalR();
+            services.AddCors(options =>
+                {
+                    options.AddPolicy("ClientPermission", policy =>
+                    {
+                        policy.AllowAnyHeader()
+                            .AllowAnyMethod()
+                            .WithOrigins("http://localhost:3000")
+                            .AllowCredentials();
+                    });
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +66,8 @@ namespace DngChat.API
                 endpoints.MapControllers();
                 endpoints.MapHub<ChatHub>("/hubs/chat");
             });
+
+            app.UseCors("ClientPermission");
         }
     }
 }
