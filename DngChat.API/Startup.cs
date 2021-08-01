@@ -62,13 +62,14 @@ namespace DngChat.API
 
             app.UseAuthorization();
 
+            app.UseCors("ClientPermission");
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
                 endpoints.MapHub<ChatHub>("/hubs/chat");
             });
 
-            app.UseCors("ClientPermission");
         }
     }
 }
